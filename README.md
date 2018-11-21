@@ -14,6 +14,14 @@ Just a template to easily init a Django endpoint with minimal requirements
 
 ### Check code with PyLint
 
+
+
 ```commandline
-$ pylint ./app
+# generic
+pylint ./app
+```
+
+```commandline
+# django-pylint
+pylint --load-plugins pylint_django --load-plugins pylint_django.checkers.db_performance ./app
 ```
